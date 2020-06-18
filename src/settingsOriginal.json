@@ -1,0 +1,62 @@
+{
+  "webhooks": [
+    {
+      "id": "722189112236310538",
+      "token": "GOEkO_ZEy9EblTn5G29tTg4JbIaZM9CRyuPaDnbBP8lVRJob9ZY_dqhP_PJvUP9XjH79"
+    },
+    {
+      "id": "720719053957759037",
+      "token": "FTv7VqQzmhZwJElKRqOJ6riJygzK1xbwz2hbK44WHskzYgzRv-d-KokO2kuDwm3UVx8o"
+    }
+  ],
+  "items": [
+    {
+      "name": "BRIO ULTRA HD PRO WEBCAM",
+      "image": "https://assets.logitech.com/assets/64939/6/briopictograms.png",
+      "url": "https://www.logitech.com/de-de/product/brio?crid=34",
+      "sku": "960-001106"
+    },
+    {
+      "name": "BRIO STREAM",
+      "image": "https://assets.logitech.com/assets/65285/brio-stream-4k-ultra-hd-webcam.png",
+      "url": "https://www.logitech.com/de-de/product/brio-stream-4k-hd-webcam?crid=34",
+      "sku": "960-001194"
+    },
+    {
+      "name": "C922",
+      "image": "https://assets.logitech.com/assets/65479/c922-pro-hd-webcam-refresh.png",
+      "url": "https://www.logitech.com/de-de/product/c922-pro-stream-webcam?crid=34",
+      "sku": "960-001088"
+    },
+    {
+      "name": "C930E BUSINESS WEBCAM",
+      "image": "https://assets.logitech.com/assets/64513/3/c930e-webcam.png",
+      "url": "https://www.logitech.com/de-de/product/c930e-webcam?crid=34",
+      "sku": "960-000972"
+    },
+    {
+      "name": "C920S",
+      "image": "https://assets.logitech.com/assets/65623/8/c920s-renoir-pdp.png",
+      "url": "https://www.logitech.com/de-de/product/hd-pro-webcam-c920s?crid=34",
+      "sku": "960-001252"
+    },
+    {
+      "name": "C270",
+      "image": "https://assets.logitech.com/assets/65480/c270-hd-webcam-refresh.png",
+      "url": "https://www.logitech.com/de-de/product/hd-webcam-c270",
+      "sku": "960-001063"
+    }
+  ],
+  "refreshInterval": 15000,
+  "proxyList": [
+    "191.101.86.77:45785:Sellibya:P9o6LqG",
+    "51.81.97.114:33128:uSquSbTT:ZoqfNPTq",
+    "51.81.7.138:33128:uSquSbTT:ZoqfNPTq",
+    "51.81.3.238:33128:uSquSbTT:ZoqfNPTq",
+    "51.81.27.27:33128:uSquSbTT:ZoqfNPTq",
+    "51.81.21.201:33128:uSquSbTT:ZoqfNPTq",
+    "51.81.124.3:33128:uSquSbTT:ZoqfNPTq",
+    "51.81.111.68:33128:uSquSbTT:ZoqfNPTq",
+    "51.81.101.46:33128:uSquSbTT:ZoqfNPTq"
+  ]
+}
