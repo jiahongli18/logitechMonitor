@@ -1,17 +1,17 @@
-const axios = require("axios");
 const webhook = require("./webhook");
 const httpsProxyAgent = require("https-proxy-agent");
+const puppeteer = require("puppeteer");
 const settings = require("./settings.json");
-const request = require("request-promise");
+const cheerio = require("cheerio");
+const test = require("./test");
+const axios = require("axios");
 
 async function checkStock(sku) {
   let proxyList = formatProxies(settings.proxyList);
   let proxy = Math.floor(Math.random() * proxyList.length);
   let currentProxy = proxyList[0];
   const agent = new httpsProxyAgent(currentProxy);
-  // let url = `https://buy.logitech.com/store/logib2c/DisplayDRProductInfo/version.2/externalReferenceID.${sku}/content.stockStatus/output.json/jsonp.productDetailsmain?`;
-  let url = `https://buy.logitech.com/store/logib2c/DisplayDRProductInfo/version.2/externalReferenceID.960-001063/content.stockStatus/output.json/jsonp.productDetailsmain%60`;
-  let inStock = false;
+  let url = `https://buy.logitech.com/store/logib2c/DisplayDRProductInfo/version.2/externalReferenceID.${sku}/content.stockStatus/output.json/jsonp.productDetailsmain?`;
 
   try {
     const { data } = await axios(url, {
@@ -19,11 +19,12 @@ async function checkStock(sku) {
       httpsAgent: agent,
       headers: {
         "User-agent":
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
       }
     });
 
-    inStock = data.includes("Out Of Stock") ? "OOS" : "In stock";
+    let inStock = data.includes("Out Of Stock") ? "OOS" : "In stock";
+    return inStock;
   } catch (e) {
     if (
       e.response &&
@@ -55,7 +56,7 @@ async function checkStock(sku) {
     }
   }
 
-  return inStock;
+  // return inStock;
 }
 
 async function findChange(sku, name, image, url, id, token) {

@@ -47,7 +47,7 @@
       "sku": "960-001063"
     }
   ],
-  "refreshInterval": 15000,
+  "refreshInterval": 7500,
   "proxyList": [
     "191.101.86.77:45785:Sellibya:P9o6LqG",
     "51.81.97.114:33128:uSquSbTT:ZoqfNPTq",
